@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFireObject, AngularFireDatabase } from 'angularfire2/database';
 import { KidsConfig } from '../../model/kidsDB';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { Storage } from '@ionic/storage';
 
 
 @IonicPage()
@@ -29,8 +28,7 @@ export class FamilyPage {
   myObject =[]
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-  public db: AngularFireDatabase, public myAuth : AngularFireAuth,
-  public store : Storage) {
+  public db: AngularFireDatabase, public myAuth : AngularFireAuth) {
     
     this.kidList = db.object('kidsdb')
     this.kidList.snapshotChanges().subscribe(getKid => {

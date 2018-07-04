@@ -22,14 +22,14 @@
               <ion-icon name="ios-create" (click) = "showPrompt(item[0], item[1]['FirstName'], item[1]['LastName'], item[1]['Phone'], item[1]['Address'], item[1]['Email'], item[1]['Password'])"></ion-icon>
               Edit
             </button>
-            <button ion-button color="secondary">
+            <button ion-button color="danger">
               <ion-icon name="md-trash" (click) = "Delete(item[0])"></ion-icon>
               Delete
             </button>
       </ion-item-options>
         <ion-item-options side="rigit">
           <button ion-button color="secondary">
-            <ion-icon name="md-eye" (click)="show(item[0], item[1]['FirstName'], item[1]['LastName'], item[1]['Phone'], item[1]['Address'], item[1]['Email'], item[1]['Password'])"></ion-icon>
+            <ion-icon name="md-eye" (click)="show(item[1]['FirstName'], item[1]['LastName'], item[1]['Phone'], item[1]['Address'], item[1]['Email'], item[1]['Password'])"></ion-icon>
             Show
           </button>
           </ion-item-options>

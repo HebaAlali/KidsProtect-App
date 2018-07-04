@@ -4,6 +4,7 @@ import { KidServicesProvider } from '../../providers/kid-services/kid-services';
 import { KidsConfig } from '../../model/kidsDB';
 import { AngularFireDatabase, AngularFireObject, } from 'angularfire2/database';
 import { AdminPage } from '../admin/admin';
+import { SingleShowPage } from '../single-show/single-show';
 
 
 @IonicPage()
@@ -53,43 +54,15 @@ export class ShowPage {
     console.log('ionViewDidLoad ShowPage');
   }
 
- show(key, FirstName, LastName, Phone, Address, Email,Password){
-  let showKid = this.alertCtrl.create({
-   // title: 'Show',
-    message: "This is Data of kid",
-    inputs: [
-      {
-        name: 'FirstName',
-        value: FirstName
-      },
-      {
-        name: 'LastName',
-        value: LastName
-      },
-      {
-        name: 'Phone',
-        value: Phone
-      },
-      {
-        name: 'Address',
-        value: Address
-      },
-      {
-        name: 'Email',
-        value: Email
-      },
-     { 
-       name: 'Password',
-       value: Password
-    },
-    ],
-    buttons: [
-      {
-        text: 'OK',
-      },
-    ]
-  });
-  showKid.present();
+ show(FirstName, LastName, Phone, Address, Email,Password){
+   this.navCtrl.push(SingleShowPage,{
+    FirstName : FirstName, 
+    LastName : LastName, 
+    Phone: Phone, 
+    Address: Address, 
+    Email : Email,
+    Password : Password
+   })
 }
 
 

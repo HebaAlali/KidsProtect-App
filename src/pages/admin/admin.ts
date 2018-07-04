@@ -5,6 +5,7 @@ import { HomePage } from '../home/home';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { SignUpPage } from '../sign-up/sign-up';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { ShowPage } from '../show/show';
 
 
 @IonicPage()
@@ -52,7 +53,7 @@ public authi : AngularFireAuth, public alertCtrl: AlertController) {
   }
 
   show(){
-    this.navCtrl.push("ShowPage")
+    this.navCtrl.push(ShowPage)
     console.log("Showed")
   }
 

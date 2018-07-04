@@ -26,7 +26,9 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 
 import { LocalNotifications } from '@ionic-native/local-notifications';
 
-import { IonicStorageModule } from '@ionic/storage';
+import { SingleShowPage } from '../pages/single-show/single-show';
+import { ShowPage } from '../pages/show/show';
+
 
 
 export const fireconfig = {
@@ -48,12 +50,13 @@ export const fireconfig = {
     AdminPage,
     LoginPage,
     SignUpPage,
-    ContactPage
+    ContactPage,
+    SingleShowPage,
+    ShowPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot(),
     AngularFireModule.initializeApp(fireconfig),
     AngularFireDatabaseModule
   ],
@@ -67,7 +70,9 @@ export const fireconfig = {
     AdminPage,
     LoginPage,
     SignUpPage,
-    ContactPage
+    ContactPage,
+    SingleShowPage,
+    ShowPage
   ],
   providers: [
     StatusBar,
