@@ -1,5 +1,5 @@
 
-<ion-content style="background :linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))">
+<ion-content>
   <img src="assets/imgs/home/4148.png">
 
   <!--
@@ -8,15 +8,9 @@
     <button ion-button style="background: rgb(10, 43, 112); color: rgb(231, 227, 227)" round (click) = "admin()">ادارة الروضة</button>
   </div>
 -->
-<div style="
-padding:10px;
- display:grid;
- 
- grid-template-columns: auto auto;
- ">
 
+<!--
 <ion-card   style="width:120px;" >
-  <!-- admin -->
   <img src="assets/imgs/home/Group 53.png" (click) = "family()"/>
   <ion-card-content>
     <ion-card-title>
@@ -25,15 +19,41 @@ padding:10px;
 </ion-card>
 
 <ion-card  style="width:120px;" >
-  <!-- family -->
   <img src="assets/imgs/home/Group 54.png" (click) = "admin()"/>
   <ion-card-content>
     <ion-card-title>
     </ion-card-title>
   </ion-card-content>
 </ion-card>
-</div>
+-->
+
+
+
+
+<ion-list dir="rtl">
+  <ion-item>
+    <ion-thumbnail (click) = "admin()" item-start>
+      <img src="assets/imgs/home/Group 54.png">
+    </ion-thumbnail>
+    <h2>صفحة الادارة</h2>
+    <p>التحكم الكامل بالتطبيق</p>
+    <button (click) = "admin()" ion-button clear item-end>الدخول</button>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail (click) = "family()" item-start>
+      <img src="assets/imgs/home/Group 53.png">
+    </ion-thumbnail>
+    <h2>صفحة العائلة</h2>
+    <p> يمكن مشاهدة تفاصيل الطالب </p>
+    <button (click) = "family()" ion-button clear item-end>الدخول</button>
+  </ion-item>
+</ion-list>
+
+
+
+
+
+
 
 </ion-content>
-
-
