@@ -1,12 +1,81 @@
-// page-admin {
-// }
+page-admin {
 
 
-// div{
-//     background-color: #bb64e4;
-    
-// }
-// button{
-//     color: #fedcd2;
-// }
+.headerAdminImg{
+    width: 100%;
+    }
+
+
+.summryAdminImg{
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    background-color: #E7F1F8;
+    }
+
+    .btnGroup{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+            position: absolute;
+            top: 10%;
+
+    }
+    .btnCss{
+
+
+    }
+.showBtn{
+     width: 212px;
+     height: 40px;
+     font-size: 20px;
+     border-radius: 50px;
+     margin: 10px 0 10px 0;
+     color: beige;
+     background-color: #215175;
+       position: absolute;
+       top: 355px;
+       left: 80px;
+
+
+}
+.addBtn{
+     width: 96px;
+     height: 40px;
+     font-size: 20px;
+     border-radius: 50px;
+     margin: 10px 0 10px 0;
+     color: beige;
+     background-color: #215175;
+                 position: absolute;
+                 top: 400px;
+                 left: 80px;
+
+}
+.delBtn{
+     width: 96px;
+     height: 40px;
+     font-size: 20px;
+     border-radius: 50px;
+     margin: 10px 0 10px 0;
+     color: beige;
+     background-color: #215175;
+         position: absolute;
+         top: 400px;
+         left: 198px;
+
+
+}
+
+.sinup{
+         position: absolute;
+         top: 530px;
+         right: 31%;
+
+
+}
+
+}
  
+
+  

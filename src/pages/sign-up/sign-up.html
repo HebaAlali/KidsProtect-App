@@ -13,22 +13,27 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="mainPage">
     <ion-list>
 
-        <ion-item>
-          <ion-label>email</ion-label>
-          <ion-input type="text" [(ngModel)] = 'data.email'></ion-input>
+        <ion-item class="txtEmail">
+          <ion-label>Email</ion-label>
+          <ion-input class="txtEmail" type="text" [(ngModel)] = 'data.email'></ion-input>
         </ion-item>
       
         <ion-item>
           <ion-label>Password</ion-label>
-          <ion-input type="password" [(ngModel)] = 'data.password'></ion-input>
+<ion-input class="txtPass" type="password" [(ngModel)]='data.password'></ion-input>
         </ion-item>
+
+<ion-item>
+  <ion-label>Retype Password</ion-label>
+<ion-input class="txtrePass" type="password"></ion-input>
+</ion-item>
       
       </ion-list>
       
-      <div padding>
+      <div>
         <button ion-button color="secondary" round (click) = "signUp()">Sign Up</button>
 
       </div>
