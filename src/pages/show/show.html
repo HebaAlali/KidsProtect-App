@@ -1,36 +1,28 @@
 
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>show</ion-title>
-  </ion-navbar>
-
-</ion-header>
+<!-- complet!  -->
 
 <ion-content padding>
-  
-    <ion-list>
-        <ion-item-sliding *ngFor="let item of myObject">
-          <ion-item>
+
+    <ion-list class="showList">
+        <ion-item-sliding class="itemSlide" *ngFor="let item of myObject">
+          <ion-item class="itemIon1">
             <ion-avatar item-start>
-              <img src="https://www.shareicon.net/data/2016/06/25/786527_people_512x512.png">
+              <img src="assets/imgs/avatarimg.png">
             </ion-avatar>
-            <h2> {{item[1]['FirstName']}}</h2>
+            <h2 class="itemIon" > {{item[1]['FirstName']}}</h2>
           </ion-item>
-          <ion-item-options side="left">
-            <button ion-button color="primary">
-              <ion-icon name="ios-create" (click) = "showPrompt(item[0], item[1]['FirstName'], item[1]['LastName'], item[1]['Phone'], item[1]['Address'], item[1]['Email'], item[1]['Password'])"></ion-icon>
-              Edit
+
+          <ion-item-options class="editDelBtn" side="left">
+            <button class="editBtn" (click) = "showPrompt(item[0], item[1]['FirstName'], item[1]['LastName'], item[1]['Phone'], item[1]['Address'], item[1]['Email'], item[1]['Password'])">
+              تعديل
             </button>
-            <button ion-button color="danger">
-              <ion-icon name="md-trash" (click) = "Delete(item[0])"></ion-icon>
-              Delete
+            <button class="delBtn" (click) = "Delete(item[0])">
+              حذف
             </button>
       </ion-item-options>
-        <ion-item-options side="rigit">
-          <button ion-button color="secondary">
-            <ion-icon name="md-eye" (click)="show(item[1]['FirstName'], item[1]['LastName'], item[1]['Phone'], item[1]['Address'], item[1]['Email'], item[1]['Password'])"></ion-icon>
-            Show
+        <ion-item-options  side="rigit">
+          <button class="shwBtn" (click)="show(item[1]['FirstName'], item[1]['LastName'], item[1]['Phone'], item[1]['Address'], item[1]['Email'], item[1]['Password'])">
+            عرض
           </button>
           </ion-item-options>
           </ion-item-sliding>

@@ -1,3 +1,4 @@
+<!-- complet! -->
 
 <!-- <ion-header>
   <ion-navbar>
@@ -5,24 +6,25 @@
   </ion-navbar>
 </ion-header> -->
 <ion-content class="ionCnt" >
-  <img class="headerImg" src="assets/imgs/loginForm/Kindergarten-1440x810.png">
+  <img class="headerImg" src="assets/imgs/loginForm/familyLogin.png">
   <form class="loginForm" action="">
     <br>
-    البريد الالكتروني  
+    البريد الالكتروني
     <br>
-    <input  class="emailInput" type="text" name="firstname" value="">
-    <br> 
+    <input  class="emailInput" type="text" name="firstname" value="" [(ngModel)] = 'Email'>
+    <br>
     كلمة المرور
     <br>
-    <input class="passInput" type="text" name="lastname" value="">
+    <input class="passInput" type="text" name="lastname" value="" [(ngModel)] = 'Password'>
     <br>
     <br>
     <br>
     <button class="loginBtn" (click)="login()">
-      تسجيل دخول 
+      تسجيل دخول
     </button>
+
     <button class="loginBtn" (click)="logOut()">
-      خروج 
+      خروج
     </button>
   </form>
 </ion-content>

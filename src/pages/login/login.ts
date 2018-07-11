@@ -25,14 +25,14 @@ export class LoginPage {
   //   Stage : '',
   //   Email : '',
   //   Password: ''
-  // }; 
+  // };
   isLogged = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public auth : AuthServiceProvider, public alertCtrl: AlertController) {
 
       if (this.isLogged) {
-        
+
       }
 
   }
@@ -86,7 +86,7 @@ export class LoginPage {
     });
     prompt.present();
   }
-  
+
   logOut(){
     this.auth.signOut().then(() => (
       this.navCtrl.setRoot(HomePage)
@@ -94,5 +94,3 @@ export class LoginPage {
   }
 
 }
-
-

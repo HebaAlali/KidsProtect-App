@@ -1,41 +1,32 @@
-
-<ion-header>
-  
-  <ion-navbar >
-    <ion-title>Admin</ion-title>
-  </ion-navbar>
-
-</ion-header>
+<!-- complete -->
 
 <ion-content >
   <!-- <img src="assets/imgs/kid.jpg">
   <br><br>
   <div>
-    <button ion-button block color="secondary" round (click) ="add()"><B> اضافة بيانات </B></button>
+    <button ion-button block
+    color="secondary" round (click) ="add()"><B> اضافة بيانات </B></button>
     <br>
-    <button ion-button block color="secondary" round (click) ="show()"><B>عرض </B> </button>
+    <button ion-button block
+    color="secondary" round (click) ="show()"><B>عرض </B> </button>
     <br>
-    <button ion-button block color="secondary" round (click) ="signOut()"><B>خروج </B> </button>
+    <button ion-button block
+    color="secondary" round (click) ="signOut()"><B>خروج </B> </button>
     <br>
-    <button ion-button block color="secondary" round (click) ="SignUp()"><B>تسجيل جديد </B> </button>
+    <button ion-button block
+    color="secondary" round (click) ="SignUp()"><B>تسجيل جديد </B> </button>
     <br>
-    <button ion-button block color="secondary" round (click) ="notice()"><B>notice </B> </button>
+    <button ion-button block
+    color="secondary" round (click) ="notice()"><B>notice </B> </button>
   </div> -->
 
-<img src="assets/imgs/adminPage/Kindergarten1.png" class="headerAdminImg" />
+<img src="assets/imgs/adminPage/header.png" class="headerAdminImg" />
 <img src="assets/imgs/adminPage/summry.png" class="summryAdminImg"/>
 
 <div class="btnGroup">
-
 <button class="showBtn" (click)="show()"> عرض </button>
-<br>
-
-  <div class="btnCss">
-
 <button class="addBtn" (click)="add()"> اضافة </button>
-    <button class="delBtn" > ازالة </button>
-
-  </div> 
+<button class="delBtn" (click) ="notice()"> ارسال اشعار </button>
 </div>
 
 <div class="sinup">

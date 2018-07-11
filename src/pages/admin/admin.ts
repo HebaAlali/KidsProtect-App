@@ -40,13 +40,13 @@ public authi : AngularFireAuth, public alertCtrl: AlertController) {
       console.log("no auth")
       this.showAlert()
 
-    } 
+    }
   }
 
   showAlert() {
     const alert = this.alertCtrl.create({
-      title: 'No User Login',
-      subTitle: 'plz. sign Up ',
+      title: 'تنبيه',
+      subTitle: 'عفوا لم تقم بتسجيل الدخول',
       buttons: ['OK']
     });
     alert.present();
