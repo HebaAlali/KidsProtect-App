@@ -1,14 +1,7 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-   <h1>قسم العائلة  </h1>
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<!-- compelte! -->
 
-
-<ion-content padding>
-    <ion-card>
+<ion-content>
+    <!-- <ion-card>
       <img src="https://www.shareicon.net/data/2016/06/25/786527_people_512x512.png">
         <ion-card-content>
           <ion-card-title>
@@ -27,5 +20,38 @@
               {{this.myKid.Password}}
           </p>
         </ion-card-content>
-      </ion-card>
+      </ion-card> -->
+<img src="assets/imgs/kidinfo.png" class="kidinfo" />
+<br>
+<img src="assets/imgs/line.png" class="line" />
+
+<div dir="rtl" class="formKidInfo">
+  <div class="kidName">
+    <h3>اسم الطالب: </h3>
+ {{this.myKid.FirstName}} {{this.myKid.LastName}}
+  </div>
+  <div class="kidStage">
+    <h3>المرحلة:</h3>
+ {{this.myKid.Stage}}
+  </div>
+  <div class="kidPhon">
+    <h3>رقم الهاتف: </h3>
+ {{this.myKid.Phone}}
+  </div>
+  <div class="kidAddress">
+    <h3>العنوان: </h3>
+ {{this.myKid.Address}}
+  </div>
+  <div class="kidEmail">
+    <h3>البريد الالكتروني: </h3>
+ {{this.myKid.Email}}
+  </div>
+  <div class="Password">
+    <h3>كلمة المرور: </h3>
+ {{this.myKid.Password}}
+  </div>
+
+</div>
+
+
 </ion-content>
