@@ -15,7 +15,7 @@ import { SingleShowPage } from '../single-show/single-show';
 export class ShowPage {
   Password: string=''
   Email : string=''
-  
+
   kidList : AngularFireObject<any>
   myKid : KidsConfig = {
     FirstName : '',
@@ -30,8 +30,8 @@ export class ShowPage {
   itemArray =[];
   myObject = [];
 
-  constructor(public navCtrl: NavController, 
-    public navParams: NavParams, public alertCtrl: AlertController, 
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams, public alertCtrl: AlertController,
     public edit: KidServicesProvider, db: AngularFireDatabase) {
 
       this.kidList = db.object("kidsdb");
@@ -48,7 +48,14 @@ export class ShowPage {
         }
       });
   }
-  
+
+  goBack(){
+  this.navCtrl.push(AdminPage)
+
+  console.log('goBackIsClicked')
+
+}
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ShowPage');
@@ -56,10 +63,10 @@ export class ShowPage {
 
  show(FirstName, LastName, Phone, Address, Email,Password){
    this.navCtrl.push(SingleShowPage,{
-    FirstName : FirstName, 
-    LastName : LastName, 
-    Phone: Phone, 
-    Address: Address, 
+    FirstName : FirstName,
+    LastName : LastName,
+    Phone: Phone,
+    Address: Address,
     Email : Email,
     Password : Password
    })
@@ -103,7 +110,7 @@ export class ShowPage {
           name: 'Email',
           value: Email
         },
-       { 
+       {
          name: 'Password',
          value: Password
       },

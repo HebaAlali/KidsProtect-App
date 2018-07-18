@@ -7,7 +7,6 @@ import { SignUpPage } from '../sign-up/sign-up';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { ShowPage } from '../show/show';
 
-
 @IonicPage()
 @Component({
   selector: 'page-admin',
@@ -20,6 +19,11 @@ export class AdminPage {
   public myAuth: AuthServiceProvider, public notify: LocalNotifications,
 public authi : AngularFireAuth, public alertCtrl: AlertController) {
   }
+  goBack(){
+  this.navCtrl.push(HomePage)
+
+  console.log('goBackIsClicked')
+}
 
   notice(){
     this.notify.schedule({

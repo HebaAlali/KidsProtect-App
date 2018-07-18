@@ -1,3 +1,38 @@
 page-add-new {
 
+    .headerImg{
+        background-size: cover;
+        padding: 5px;
+        margin: 10px;
+        
+    }
+  .divForm {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .txtEmail {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid #215175;
+    text-align: center;
+  }
+  .txtPass {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid #215175;
+    text-align: center;
+  }
+  .divBtn {
+    width: 70%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin: 10px 12%;
+    color: beige;
+    background-color: #215175;
+  }
 }

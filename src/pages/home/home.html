@@ -2,59 +2,59 @@
 
 <ion-content>
   <img src="assets/imgs/home/header.png">
-
+  
   <!--
-  <div style="padding : 40px">
-    <button ion-button style="background: rgb(10, 43, 112); color: rgb(231, 227, 227)" round (click) = "family()"> اسرة الطفل</button>
-    <button ion-button style="background: rgb(10, 43, 112); color: rgb(231, 227, 227)" round (click) = "admin()">ادارة الروضة</button>
-  </div>
--->
-
-<!--
-<ion-card   style="width:120px;" >
-  <img src="assets/imgs/home/Group 53.png" (click) = "family()"/>
-  <ion-card-content>
-    <ion-card-title>
-    </ion-card-title>
-     </ion-card-content>
-</ion-card>
-
-<ion-card  style="width:120px;" >
-  <img src="assets/imgs/home/Group 54.png" (click) = "admin()"/>
-  <ion-card-content>
-    <ion-card-title>
-    </ion-card-title>
-  </ion-card-content>
-</ion-card>
--->
-
-
-
-
-<ion-list class="mainItme"dir="rtl">
-  <ion-item class="adminPage" (click) = "admin()">
-    <ion-thumbnail  item-start>
-      <img src="assets/imgs/home/admin.png">
-    </ion-thumbnail>
-    <h2>صفحة الادارة</h2>
-    <p>التحكم الكامل بالتطبيق</p>
-    <button (click) = "admin()" ion-button clear item-end>الدخول</button>
-  </ion-item>
-
-  <ion-item class="familyPage" (click) = "family()">
-    <ion-thumbnail  item-start>
-      <img src="assets/imgs/home/family.png">
-    </ion-thumbnail>
-    <h2>صفحة العائلة</h2>
-    <p> يمكن مشاهدة تفاصيل الطالب </p>
-    <button (click) = "family()" ion-button clear item-end>الدخول</button>
-  </ion-item>
-</ion-list>
-
-
-
-
-
-
-
+    <div style="padding : 40px">
+      <button ion-button style="background: rgb(10, 43, 112); color: rgb(231, 227, 227)" round (click) = "family()"> اسرة الطفل</button>
+      <button ion-button style="background: rgb(10, 43, 112); color: rgb(231, 227, 227)" round (click) = "admin()">ادارة الروضة</button>
+    </div>
+  -->
+  
+  <!--
+    <ion-card   style="width:120px;" >
+      <img src="assets/imgs/home/Group 53.png" (click) = "family()"/>
+      <ion-card-content>
+        <ion-card-title>
+        </ion-card-title>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card  style="width:120px;" >
+      <img src="assets/imgs/home/Group 54.png" (click) = "admin()"/>
+      <ion-card-content>
+        <ion-card-title>
+        </ion-card-title>
+      </ion-card-content>
+    </ion-card>
+  -->
+  
+  
+  
+  
+  <ion-list class="mainItme"dir="rtl">
+    <ion-item class="adminPage" >
+      <ion-thumbnail  item-start>
+        <img src="assets/imgs/home/admin.png">
+      </ion-thumbnail>
+      <h2 (click)="admin()">صفحة الادارة</h2>
+      <p>التحكم الكامل بالتطبيق</p>
+      <button (click) = "admin()" ion-button clear item-end>الدخول</button>
+    </ion-item>
+    
+    <ion-item class="familyPage" >
+      <ion-thumbnail  item-start>
+        <img src="assets/imgs/home/family.png">
+      </ion-thumbnail>
+      <h2 (click)="family()">صفحة العائلة</h2>
+      <p> يمكن مشاهدة تفاصيل الطالب </p>
+      <button (click) = "family()" ion-button clear item-end>الدخول</button>
+    </ion-item>
+  </ion-list>
+  
+  
+  
+  
+  
+  
+  
 </ion-content>
