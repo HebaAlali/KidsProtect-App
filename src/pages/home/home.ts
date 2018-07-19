@@ -17,8 +17,8 @@ export class HomePage {
 
   admin() {
     const prompt = this.alert.create({
-      title: 'Login',
-      message: "Enter the Password, please",
+      title: 'تسجيل الدخول',
+      message: "ادخل كلمة السر رجاءا",
       inputs: [
         {
           name: 'Password',

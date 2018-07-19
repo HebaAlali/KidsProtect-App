@@ -7,37 +7,43 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>addNew</ion-title>
+    <ion-title>اضافة طالب </ion-title>
   </ion-navbar>
 
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
     <ion-list>
 
         <ion-item>
-          <ion-label floating>FirstName</ion-label>
-          <ion-input type="text" [(ngModel)] = addkid.FirstName></ion-input>
+
+<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.FirstName></ion-input>
         </ion-item>
 
         <ion-item>
-            <ion-label floating>LastName</ion-label>
-            <ion-input type="text" [(ngModel)] = addkid.LastName></ion-input>
+            
+<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.LastName></ion-input>
           </ion-item>
       
         <ion-item>
-          <ion-label floating>Phone</ion-label>
-          <ion-input type="text" [(ngModel)] = addkid.Phone></ion-input>
+          
+<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.Phone></ion-input>
         </ion-item>
         <ion-item>
-            <ion-label floating>Address</ion-label>
-            <ion-input type="text" [(ngModel)] = addkid.Address></ion-input>
+            
+<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.Address></ion-input>
           </ion-item>
           <ion-item>
-              <ion-label floating>Stage</ion-label>
-              <ion-input type="text" [(ngModel)] = addkid.Stage></ion-input>
+              
+<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.Stage></ion-input>
             </ion-item>
             
       </ion-list>
-      <button ion-button block color="secondary" round (click) = "addnew(addkid)" > اضافة </button>
+
+<button class="divBtn" ion-button block color="secondary" round (click)="addnew(addkid)"> اضافة </button>
+
+<button class="divBtn" ion-button block color="secondary" round (click)="goBack()"> back </button>
+
+       
 </ion-content>

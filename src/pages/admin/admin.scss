@@ -3,11 +3,13 @@ page-admin {
 
 .headerAdminImg{
     background-size: cover;
+    width: 100%;
     }
 //
 //
 .summryAdminImg{
   background-size: cover;
+  width: 100%;
   margin: 5% 0 5% 0;
   padding: 5%;
 
@@ -80,16 +82,13 @@ page-admin {
      background-color: #215175;
 
 }
-//
-.sinup{
-         position: absolute;
 
-width: 70%;
-height: 40px;
+
+.sinup{
 font-size: 20px;
-border-radius: 50px;
-margin: 10px 12% ;
-color: beige;
+align-content: center;
+align-items: center;
+text-align: center;
 
 }
 

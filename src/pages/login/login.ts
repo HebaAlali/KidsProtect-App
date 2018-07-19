@@ -42,11 +42,11 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-
+zz
   login() {
     const prompt = this.alertCtrl.create({
-      title: 'Login',
-      message: "Enter a name for this new album you're so keen on adding",
+      title: 'تسجيل الدخول',
+      message: "ادخل اسمك و كلمة المرور لعرض معلومات الطالب",
       inputs: [
         {
           name: 'Email',

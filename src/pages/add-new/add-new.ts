@@ -33,6 +33,9 @@ export class AddNewPage {
     console.log("your email : " + this.myAuth.auth.currentUser.email)
     console.log('ionViewDidLoad AddNewPage');
   }
+  goBack(){
+    this.navCtrl.push(AdminPage)
+  }
 
   addnew(addkid){
       addkid.Email = this.myAuth.auth.currentUser.email

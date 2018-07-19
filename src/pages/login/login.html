@@ -1,12 +1,10 @@
 <!-- complet! -->
-
 <ion-header>
-<ion-navbar color="primary" >
-    <ion-buttons left (click)="goBack()">
-      <button navPop ion-button icon-only ></button>
-    </ion-buttons>
-    <ion-title>الدخول</ion-title>
+
+<ion-navbar color="primary">
+    <ion-title>تسجيل دخول </ion-title>
   </ion-navbar>
+
 </ion-header>
 
 <ion-content class="ionCnt" >
@@ -15,11 +13,11 @@
     <br>
     البريد الالكتروني
     <br>
-    <input  class="emailInput" type="text" name="firstname" value="" [(ngModel)] = 'Email'>
+<input class="emailInput" type="text" name="firstname" value="" [(ngModel)]='info.email'>
     <br>
     كلمة المرور
     <br>
-    <input class="passInput" type="text" name="lastname" value="" [(ngModel)] = 'Password'>
+<input class="passInput" type="text" name="lastname" value="" [(ngModel)]='info.password'>
     <br>
     <br>
     <br>

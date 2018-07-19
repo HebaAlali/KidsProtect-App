@@ -87,31 +87,37 @@ export class ShowPage {
 
   showPrompt(key, FirstName, LastName, Phone, Address, Email,Password) {
     let prompt = this.alertCtrl.create({
-      title: 'Edit',
-      message: "Edit on Data of kids",
+      title: 'تعديل',
+      message: "يمكن تعديل بيانات الطالب",
       inputs: [
         {
           name: 'FirstName',
+          placeholder:'الاسم الاول',
           value: FirstName
         },
         {
           name: 'LastName',
+          placeholder: 'الاسم الثاني',
           value: LastName
         },
         {
           name: 'Phone',
+          placeholder: 'الهاتف',
           value: Phone
         },
         {
           name: 'Address',
+          placeholder: ' العنوان',
           value: Address
         },
         {
           name: 'Email',
+          placeholder: 'البريد اللكتروني ',
           value: Email
         },
        {
          name: 'Password',
+         placeholder: ' كلمة المرور',
          value: Password
       },
       ],

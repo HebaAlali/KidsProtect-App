@@ -1,7 +1,12 @@
 page-sign-up {
+  img{
+    width:100%;
+  }
   .divForm{
-padding-left: 20px;
-padding-right: 20px;
+align-items: center;
+
+// padding-left: 20px;
+// padding-right: 20px;
 
   }
 
@@ -25,6 +30,7 @@ padding-right: 20px;
     }
 
     .divBtn{
+      
       width: 70%;
       height: 40px;
       font-size: 16px;
