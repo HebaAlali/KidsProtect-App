@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+<ion-navbar color="primary">
     <ion-title>اضافة طالب </ion-title>
   </ion-navbar>
 
@@ -18,32 +18,32 @@
 
         <ion-item>
 
-<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.FirstName></ion-input>
+<ion-input class="txtEmail" type="text" placeholder="الاسم الاول"  [(ngModel)]=addkid.FirstName></ion-input>
         </ion-item>
 
         <ion-item>
             
-<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.LastName></ion-input>
+<ion-input class="txtEmail" type="text" placeholder="الاسم الثاني" [(ngModel)]=addkid.LastName></ion-input>
           </ion-item>
       
         <ion-item>
           
-<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.Phone></ion-input>
+<ion-input class="txtEmail" type="text" placeholder="رقم الهاتف" [(ngModel)]=addkid.Phone></ion-input>
         </ion-item>
         <ion-item>
             
-<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.Address></ion-input>
+<ion-input class="txtEmail" type="text" placeholder="العنوان" [(ngModel)]=addkid.Address></ion-input>
           </ion-item>
           <ion-item>
               
-<ion-input class="txtEmail" type="text" [(ngModel)]=addkid.Stage></ion-input>
+<ion-input class="txtEmail" type="text" placeholder="المرحلة" [(ngModel)]=addkid.Stage></ion-input>
             </ion-item>
             
       </ion-list>
 
 <button class="divBtn" ion-button block color="secondary" round (click)="addnew(addkid)"> اضافة </button>
 
-<button class="divBtn" ion-button block color="secondary" round (click)="goBack()"> back </button>
+<button class="divBtn" ion-button block color="secondary" round (click)="goBack()"> الغاء </button>
 
        
 </ion-content>

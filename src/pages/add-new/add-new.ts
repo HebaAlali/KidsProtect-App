@@ -49,9 +49,9 @@ export class AddNewPage {
 
   showAlert() {
     const alert = this.alertCtrl.create({
-      title: 'New Kid',
-      subTitle: 'New kid was added',
-      buttons: ['OK']
+      title: 'اضافة طالب',
+      subTitle: 'تمت اضافة طالب جديد',
+      buttons: ['تم']
     });
     alert.present();
   }

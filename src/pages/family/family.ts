@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFireObject, AngularFireDatabase } from 'angularfire2/database';
 import { KidsConfig } from '../../model/kidsDB';
 import { AngularFireAuth } from 'angularfire2/auth';
-
+import { LoginPage } from '../login/login';
 
 @IonicPage()
 @Component({
@@ -26,6 +26,7 @@ export class FamilyPage {
 
   itemArray =[];
   myObject =[]
+  auth: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
   public db: AngularFireDatabase, public myAuth : AngularFireAuth) {
@@ -64,5 +65,13 @@ export class FamilyPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad FamilyPage');
   }
+
+
+  logOut(){
+   
+      this.navCtrl.setRoot(LoginPage)
+
+  }
+
 
 }
