@@ -28,6 +28,7 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 
 import { SingleShowPage } from '../pages/single-show/single-show';
 import { ShowPage } from '../pages/show/show';
+import { AddNewPage } from '../pages/add-new/add-new';
 
 
 
@@ -52,7 +53,8 @@ export const fireconfig = {
     SignUpPage,
     ContactPage,
     SingleShowPage,
-    ShowPage
+    ShowPage,
+    AddNewPage
   ],
   imports: [
     BrowserModule,
@@ -72,7 +74,8 @@ export const fireconfig = {
     SignUpPage,
     ContactPage,
     SingleShowPage,
-    ShowPage
+    ShowPage,
+    AddNewPage
   ],
   providers: [
     StatusBar,

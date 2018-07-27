@@ -4,6 +4,7 @@ import { AngularFireObject, AngularFireDatabase } from 'angularfire2/database';
 import { KidsConfig } from '../../model/kidsDB';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { LoginPage } from '../login/login';
+import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 
 @IonicPage()
 @Component({
@@ -26,10 +27,10 @@ export class FamilyPage {
 
   itemArray =[];
   myObject =[]
-  auth: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-  public db: AngularFireDatabase, public myAuth : AngularFireAuth) {
+  public db: AngularFireDatabase, public myAuth : AngularFireAuth, 
+  public authserv : AuthServiceProvider) {
     
     this.kidList = db.object('kidsdb')
     this.kidList.snapshotChanges().subscribe(getKid => {
@@ -68,9 +69,9 @@ export class FamilyPage {
 
 
   logOut(){
-   
-      this.navCtrl.setRoot(LoginPage)
-
+    this.authserv.signOut().then(() => (
+    this.navCtrl.setRoot(LoginPage)
+  ))
   }
 
 

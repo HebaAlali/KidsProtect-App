@@ -49,24 +49,14 @@ export class ShowPage {
       });
   }
 
-  goBack(){
-  this.navCtrl.push(AdminPage)
 
-  console.log('goBackIsClicked')
-
-}
-
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ShowPage');
-  }
-
- show(FirstName, LastName, Phone, Address, Email,Password){
+ show(FirstName, LastName, Phone, Address,Stage, Email,Password){
    this.navCtrl.push(SingleShowPage,{
     FirstName : FirstName,
     LastName : LastName,
     Phone: Phone,
     Address: Address,
+    Stage: Stage,
     Email : Email,
     Password : Password
    })
@@ -144,6 +134,10 @@ export class ShowPage {
       ]
     });
     prompt.present();
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ShowPage');
   }
 
 }

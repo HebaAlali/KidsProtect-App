@@ -6,6 +6,7 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 import { SignUpPage } from '../sign-up/sign-up';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { ShowPage } from '../show/show';
+import { AddNewPage } from '../add-new/add-new';
 
 @IonicPage()
 @Component({
@@ -37,7 +38,7 @@ public authi : AngularFireAuth, public alertCtrl: AlertController) {
 
   add(){
     if (this.authi.auth.currentUser) {
-      this.navCtrl.push("AddNewPage")
+      this.navCtrl.push(AddNewPage)
     console.log("Added")
     }
     else{

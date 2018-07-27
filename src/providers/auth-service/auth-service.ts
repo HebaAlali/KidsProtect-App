@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase/app'
+import * as firebase from 'firebase/app';
 
 
 @Injectable()
@@ -11,7 +11,7 @@ export class AuthServiceProvider {
     console.log('Hello AuthServiceProvider Provider');
 
     myAuth.authState.subscribe(assign => {
-      this.user = this.user
+      this.user = assign
     })
   }
 
@@ -22,7 +22,7 @@ export class AuthServiceProvider {
 
   SignIn(create){
     console.log("sign in")
-    return this.myAuth.auth.signInWithEmailAndPassword(create.email, create.password);
+      return this.myAuth.auth.signInWithEmailAndPassword(create.email, create.password);    
   }
 
   signOut(){
