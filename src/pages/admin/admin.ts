@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 import { HomePage } from '../home/home';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { FCM } from '@ionic-native/fcm';
 import { SignUpPage } from '../sign-up/sign-up';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { ShowPage } from '../show/show';
@@ -14,12 +15,35 @@ import { AddNewPage } from '../add-new/add-new';
   templateUrl: 'admin.html',
 })
 export class AdminPage {
+  titlefirebase:'';
+  bodyfirebase:'';
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
   public myAuth: AuthServiceProvider, public notify: LocalNotifications,
-public authi : AngularFireAuth, public alertCtrl: AlertController) {
+public authi : AngularFireAuth, public alertCtrl: AlertController,private fcm:FCM ) {
   }
+
+  firebaseMessage(){
+    this. fcm.getToken().then(token => {
+      //alert(token);
+     });
+     
+     this.fcm.onNotification().subscribe(data => {
+       if(data.wasTapped){
+         console.log("Received in background");
+       alert(data.title+ " / "+ data.body);
+       this.titlefirebase=data.title;
+       this.bodyfirebase=data.body;
+       } else {
+         console.log("Protect kindergarten");
+        alert("Protect kindergarten");
+       };
+     });
+     
+  ;
+     
+   }
   goBack(){
   this.navCtrl.push(HomePage)
 
