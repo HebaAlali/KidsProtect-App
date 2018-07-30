@@ -25,6 +25,7 @@ import { KidServicesProvider } from '../providers/kid-services/kid-services';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { FCM } from '@ionic-native/fcm';
 
 import { SingleShowPage } from '../pages/single-show/single-show';
 import { ShowPage } from '../pages/show/show';
@@ -84,6 +85,7 @@ export const fireconfig = {
     KidServicesProvider,
     AuthServiceProvider,
     AngularFireAuth,
+    FCM,
     LocalNotifications
   ]
 })
