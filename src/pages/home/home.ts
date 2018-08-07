@@ -22,6 +22,7 @@ ionViewDidLoad(){
     this.splash= false;
     this.tabBorElement.style.displaym='flex';
   },9999);
+}
   admin() {
     const prompt = this.alert.create({
       title: 'تسجيل الدخول',
