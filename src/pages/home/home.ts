@@ -8,20 +8,14 @@ import { LoginPage } from '../login/login';
   templateUrl: 'home.html'
 })
 export class HomePage {
-   splash= true;
-  tabBorElement:any;
+   
 
   Password : any;
 
   constructor(public navCtrl: NavController, public alert: AlertController) {
-this.tabBorElement = document.querySelector('.tabbar');
-  }
-ionViewDidLoad(){
-  this.tabBorElement.style.displaym='none';
-  setTimeout(() =>{
-    this.splash= false;
-    this.tabBorElement.style.displaym='flex';
-  },9999);
+
+  
+
 }
   admin() {
     const prompt = this.alert.create({
